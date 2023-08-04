@@ -1,0 +1,130 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin: 1rem 0 0;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-7px);
+}
+
+.feature h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.feature p {
+    margin: 1rem 0 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1rem;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    font-size: 1rem;
+}
+
+#candidates-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+.slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
